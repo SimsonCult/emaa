@@ -22,22 +22,20 @@
         <div class="contenedor">
             <form action="POST">
                 <label for="nombre">Nombre: </label> <br>
-                <input type="text" name="nombre" id="nombre" class="campos"><br>
+                <input type="text" name="nombre" id="nombre" class="campos" required><br>
                 <label for="apellido">Apellido: </label><br>
-                <input type="text" name="apellido" id="apellido" class="campos"><br>
-                <h2>Como te gustaruia?</h2> <br>
-                <select name="como" id="como">
-                <option value="chupa">----elige una opcion----</option>
-                <option value="chupa">Mamada 1/2 hora</option>
-                <option value="chupa">Mamada 1 hora</option>
-                <option value="chupa">Completo con rosquete</option>
-                <option value="chupa">Como un PezGallo</option>
-            </select>
+                <input type="text" name="apellido" id="apellido" class="campos" required><br>
+                <h2>Como te gustaria?</h2> <br>
+                <select name="como" id="como" required>
+                    <option value="chupa">----elige una opcion----</option>
+                    <option value="chupa">Mamada 1/2 hora</option>
+                    <option value="chupa">Mamada 1 hora</option>
+                    <option value="chupa">Completo con rosquete</option>
+                    <option value="chupa">Como un PezGallo</option>
+                </select>
                 <input type="submit" value="Enviar.." class="boton">
             </form> <br>
-
         </div>
-
     </section>
 
     <footer class="footer-contacto">
@@ -47,6 +45,12 @@
             <li>Cel: Cuando te registres aparecera</li>
         </ul>
     </footer>
+    <script>
+        $('.boton').on(click) {
+            alert("ha fncionado");
+        }
+    </script>
+
 
 </body>
 
