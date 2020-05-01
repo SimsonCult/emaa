@@ -21,11 +21,11 @@
 
     <section>
         <div class="contenedor">
-            <form action="POST">
+            <form>
                 <label for="nombre">Nombre: </label> <br>
-                <input type="text" name="nombre" id="nombre" class="campos" required><br>
+                <input type="text" name="nombre" id="nombre" class="campos campos1" required><br>
                 <label for="apellido">Apellido: </label><br>
-                <input type="text" name="apellido" id="apellido" class="campos" required><br>
+                <input type="text" name="apellido" id="apellido" class="campos campos2" required><br>
                 <h2>Como te gustaria?</h2> <br>
                 <select name="como" id="como" required>
                     <option value="chupa">----elige una opcion----</option>
@@ -49,12 +49,20 @@
 
     <script>
         $(document).ready(function() {
-            $('.boton').on('click', function(e) {
+            $('.boton').click(function(e) {
                 e.preventDefault();
-                e.stopPropagation();
-                alert('Gracias por Registrarte ... Tus deseos seran cumplidos <br> solo tienes que llamar al 2966534638');
-            });
+                if ($('.campos1').val().length > 0) {
+                    if ($('.campos2').val().length > 0) {
+                        alert("Gracias Por Registrarte mi numero es 2966-534638");
+                        $(location).attr('href', 'aprobado.html');
+                    } else {
+                        alert('debes completar los datos para que te pueda complacer');
+                    }
+                } else {
+                    alert('debes completar los datos para que te pueda complacer');
+                }
 
+            });
 
         });
     </script>
