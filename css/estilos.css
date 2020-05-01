@@ -45,7 +45,7 @@ h1 {
 
 form {
     background-color: rgba(0, 0, 255, .3);
-    height: 250px;
+    height: 350px;
     padding: 15px;
 }
 
@@ -88,7 +88,7 @@ ul li {
 
 h2 {
     color: white;
-    margin-bottom: 0;
+    margin: 0;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -98,6 +98,6 @@ select {
     font-size: 1.2rem;
     height: 40px;
     width: 100%;
-    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 15px;
 }
