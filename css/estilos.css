@@ -73,9 +73,6 @@ label {
 
 footer {
     height: 120px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     background-color: black;
     width: 100%;
     color: white;
