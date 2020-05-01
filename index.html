@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Ema Tu Gatita</title>
+    <script src="jquery-3.4.1.min.js"></script>
 
 </head>
 
@@ -45,11 +46,17 @@
             <li>Cel: Cuando te registres aparecera</li>
         </ul>
     </footer>
-    <script src="jquery-3.4.1.min.js"></script>
+
     <script>
-        $('.boton').on(click) {
-            alert("ha fncionado");
-        }
+        $(document).ready(function() {
+            $('.boton').on('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                alert('Gracias por Registrarte ... Tus deseos seran cumplidos <br> solo tienes que llamar al 2966534638');
+            });
+
+
+        });
     </script>
 
 
